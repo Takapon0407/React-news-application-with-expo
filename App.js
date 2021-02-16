@@ -21,6 +21,15 @@ const styles = StyleSheet.create({
   },
   rightContainer: {
     flex: 1,
+    padding: 10,
+    justifyContent: 'space-between',
+  },
+  text: {
+    fontSize: 16,
+  },
+  subText: {
+    fontSize: 12,
+    color: 'gray',
   },
 });
 
@@ -37,10 +46,10 @@ export default function App() {
           />
         </View>
         <View style={styles.rightContainer}>
-          <Text numberOfLines={3}>
+          <Text numberOfLines={3} style={styles.text}>
             あなたも今多分その尊敬ように対するもののうちに思いんです。もし近頃を指図顔は同時にその尊重なけれななどをいうているたにも用意なるですですて、なぜにはやるなたでます。先輩を受けでものはけっして十月にもっとませなませ。
           </Text>
-          <Text>ReactNews</Text>
+          <Text style={styles.subText}>ReactNews</Text>
         </View>
       </View>
     </View>
