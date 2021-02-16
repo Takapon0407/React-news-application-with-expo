@@ -17,11 +17,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   leftContainer: {
-    backgroundColor: 'red',
     width: 100,
   },
   rightContainer: {
-    backgroundColor: 'blue',
     flex: 1,
   },
 });
@@ -38,7 +36,12 @@ export default function App() {
             }}
           />
         </View>
-        <View style={styles.rightContainer}></View>
+        <View style={styles.rightContainer}>
+          <Text numberOfLines={3}>
+            あなたも今多分その尊敬ように対するもののうちに思いんです。もし近頃を指図顔は同時にその尊重なけれななどをいうているたにも用意なるですですて、なぜにはやるなたでます。先輩を受けでものはけっして十月にもっとませなませ。
+          </Text>
+          <Text>ReactNews</Text>
+        </View>
       </View>
     </View>
   );
