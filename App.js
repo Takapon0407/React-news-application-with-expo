@@ -1,27 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
-import ListItem from './components/ListItem';
-import articles from './dammies/dammies.json';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import AppNavigator from './navigation/AppNavigator';
 
 export default function App() {
-  const items = articles.map((article) => {
-    return (
-      <ListItem
-        imageUrl={article.urlToImage}
-        title={article.title}
-        author={article.author}
-      />
-    );
-  });
-  return <View style={styles.container}>{items}</View>;
+  return <AppNavigator />;
 }
