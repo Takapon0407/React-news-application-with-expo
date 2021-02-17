@@ -26,22 +26,17 @@ const styles = StyleSheet.create({
   },
 });
 
-const ListItem = () => {
+const ListItem = ({ imageUrl, title, author }) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
-        <Image
-          style={{ width: 100, height: 100 }}
-          source={{
-            uri: 'https://picsum.photos/200/300',
-          }}
-        />
+        <Image style={{ width: 100, height: 100 }} source={{ uri: imageUrl }} />
       </View>
       <View style={styles.rightContainer}>
         <Text numberOfLines={3} style={styles.text}>
-          あなたも今多分その尊敬ように対するもののうちに思いんです。もし近頃を指図顔は同時にその尊重なけれななどをいうているたにも用意なるですですて、なぜにはやるなたでます。先輩を受けでものはけっして十月にもっとませなませ。
+          {title}
         </Text>
-        <Text style={styles.subText}>ReactNews</Text>
+        <Text style={styles.subText}>{author}</Text>
       </View>
     </View>
   );
