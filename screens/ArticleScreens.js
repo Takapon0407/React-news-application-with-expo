@@ -4,7 +4,6 @@ import { WebView } from 'react-native-webview';
 import { useDispatch, useSelector } from 'react-redux';
 import { addClip, deleteClip } from '../store/actions/user';
 import ClipButton from '../components/ClipButton';
-import ClipScreen from './ClipScreen';
 
 const styles = StyleSheet.create({
   container: {
