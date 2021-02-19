@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
 export default HomeScreen = ({ navigation }) => {
   const [articles, setArticles] = useState([]);
-  const [Loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchArticles();
